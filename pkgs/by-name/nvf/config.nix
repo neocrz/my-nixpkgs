@@ -3,11 +3,17 @@
 
 {
   vim = {
-    package = pkgs.neovim-unwrapped;
     theme = {
       enable = true;
       name = "catppuccin";
       style = "macchiato";
+    };
+    
+    options = {
+      autoindent = false;
+      shiftwidth = 0;
+      tabstop = 2;
+      expandtab = true;
     };
 
     treesitter.enable = true;
