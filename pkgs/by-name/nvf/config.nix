@@ -3,6 +3,7 @@
 
 {
   vim = {
+    package = pkgs.neovim-unwrapped;
     theme = {
       enable = true;
       name = "catppuccin";
@@ -12,16 +13,22 @@
     treesitter.enable = true;
     lsp.enable = true;
 
+    autocomplete.nvim-cmp.enable = true;
+    telescope.enable = true;
+    statusline.lualine.enable = true;
+
     languages = {
-      nix.enable = true;
+      enableTreesitter = true;
+
       lua.enable = true;
+      nix.enable = true;
+      python.enable = true;
+      rust.enable = true;
+      zig.enable = true;
+      ts.enable = true;
     };
 
     extraPlugins = {
-      oil = {
-        package = (pkgs.vimPlugins.oil-nvim);
-        setup = "require('oil').setup()";
-      };
     };
   };
 }
