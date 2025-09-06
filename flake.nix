@@ -34,7 +34,7 @@
           devShells.default = pkgs.mkShell {
             packages = [
               config.packages.my-echo
-              config.packages.my-nvf
+              config.packages.nvf
               pkgs.local.example2
             ];
           };
