@@ -6,9 +6,8 @@
       final: prev:
       withSystem prev.stdenv.hostPlatform.system (
         { config, ... }:
-        {
-          local = config.packages;
-        }
+        # return the package set directly
+        config.packages
       );
   };
 }
