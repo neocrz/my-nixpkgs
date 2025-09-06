@@ -6,6 +6,7 @@
     flake-parts.url = "github:hercules-ci/flake-parts";
     systems.url = "github:nix-systems/default";
     pkgs-by-name-for-flake-parts.url = "github:drupol/pkgs-by-name-for-flake-parts";
+    nvf.url = "github:notashelf/nvf";
   };
 
   outputs =
@@ -23,8 +24,12 @@
       ];
 
       perSystem =
-        { config, pkgs, ... }:
+        { config, pkgs, inputs, ... }:
         {
+	  pkgs-by-name.specialArgs = {
+            nvf = inputs.nvf;
+          };
+
           devShells.default = pkgs.mkShell {
             packages = [
               config.packages.my-echo
