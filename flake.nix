@@ -22,14 +22,14 @@
         ./imports/pkgs-all.nix
         ./imports/pkgs-by-name.nix
       ];
-
+      
+      pkgs-by-name.specialArgs = {
+        nvf = inputs.nvf;
+      };
+      
       perSystem =
         { config, pkgs, inputs, ... }:
         {
-	  pkgs-by-name.specialArgs = {
-            nvf = inputs.nvf;
-          };
-
           devShells.default = pkgs.mkShell {
             packages = [
               config.packages.my-echo
