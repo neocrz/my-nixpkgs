@@ -11,7 +11,7 @@ The primary way to use this repository is by adding it as an input to your own f
 
 ### Step 1: Add as a Flake Input
 
-In your `flake.nix`, add `my-nixpkgs` to your inputs. 
+In your `flake.nix`, add this repo to your flake inputs. 
 
 ```nix
 # flake.nix
@@ -109,6 +109,22 @@ If you want to avoid potential conflicts with other overlays, you can place all 
     ];
     ```
 
+## Direct Execution with `nix run`
+
+You can also run packages from this flake directly without adding it to your system configuration.
+
+The general format is `nix run github:neocrz/my-nixpkgs#<package-name>`.
+
+For example, to run my custom Neovim configuration:
+```sh
+nix run github:neocrz/my-nixpkgs#nvf
+```
+
+To run `my-echo` and pass arguments to it (note the `--` separator):
+```sh
+nix run github:neocrz/my-nixpkgs#my-echo -- "Hello directly from the flake!"
+```
+
 ## Available Packages
 
 -   `my-echo`: A simple custom echo script.
@@ -126,4 +142,3 @@ nix develop
 my-echo "Hello from the dev shell"
 vim .
 ```
-
