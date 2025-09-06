@@ -27,7 +27,7 @@
         {
           devShells.default = pkgs.mkShell {
             packages = [
-              config.packages.example1
+              config.packages.my-echo
               pkgs.local.example2
             ];
           };
