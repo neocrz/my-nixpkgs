@@ -13,10 +13,8 @@
 
     spellcheck = {
       enable = true;
-      programmingWordlist.enable = true;
+      # programmingWordlist.enable = true;
     };
-
-
 
     theme = {
       enable = true;
@@ -38,9 +36,9 @@
       lspkind.enable = false;
       lightbulb.enable = false;
       trouble.enable = true;
-      lspSignature.enable = false;
-      otter-nvim.enable = true;
-      nvim-docs-view.enable = true;
+      lspSignature.enable = true; #false;
+      # otter-nvim.enable = true;
+      # nvim-docs-view.enable = true;
     };
 
     debugger = {
@@ -51,8 +49,8 @@
     };
 
     autocomplete = {
-      # nvim-cmp.enable = true;
-      blink-cmp.enable = true;
+      nvim-cmp.enable = true;
+      # blink-cmp.enable = true;
     };
 
     telescope.enable = true;
@@ -97,7 +95,7 @@
     };
 
     visuals = {
-      nvim-scrollbar.enable = true;
+      # nvim-scrollbar.enable = true;
       nvim-web-devicons.enable = true;
       nvim-cursorline.enable = true;
       cinnamon-nvim.enable = true;
@@ -130,17 +128,17 @@
       enable = true;
       gitsigns.enable = true;
       gitsigns.codeActions.enable = false; # throws debug message
-      neogit.enable = true;
+      # neogit.enable = true;
     };
 
     minimap = {
       minimap-vim.enable = false;
-      codewindow.enable = true;
+      # codewindow.enable = true;
     };
 
     dashboard = {
       dashboard-nvim.enable = false;
-      alpha.enable = true;
+      # alpha.enable = true;
     };
     
     notify = {
@@ -148,7 +146,7 @@
     };
 
     projects = {
-      project-nvim.enable = true;
+      # project-nvim.enable = true;
     };
 
      utility = {
@@ -156,22 +154,22 @@
       vim-wakatime.enable = false;
       diffview-nvim.enable = true;
       yanky-nvim.enable = false;
-      icon-picker.enable = true;
-      surround.enable = true;
-      leetcode-nvim.enable = true;
-      multicursors.enable = true;
-      smart-splits.enable = true;
-      undotree.enable = true;
-      nvim-biscuits.enable = true;
+      # icon-picker.enable = true;
+      # surround.enable = true;
+      # leetcode-nvim.enable = true;
+      # multicursors.enable = true;
+      # smart-splits.enable = true;
+      # undotree.enable = true;
+      # nvim-biscuits.enable = true;
 
       motion = {
         hop.enable = true;
         leap.enable = true;
-        precognition.enable = true;
+        # precognition.enable = true;
       };
       images = {
         image-nvim.enable = false;
-        img-clip.enable = true;
+        # img-clip.enable = true;
       };
     };
 
@@ -179,7 +177,7 @@
       obsidian.enable = false; # try with true later
       neorg.enable = false;
       orgmode.enable = false;
-      mind-nvim.enable = true;
+      # mind-nvim.enable = true;
       todo-comments.enable = true;
     };
 
@@ -197,8 +195,8 @@
       modes-nvim.enable = false;
       illuminate.enable = true;
       breadcrumbs = {
-        enable = true;
-        navbuddy.enable = true;
+        # enable = true;
+        # navbuddy.enable = true;
       };
       smartcolumn = {
         enable = true;
@@ -217,10 +215,10 @@
       chatgpt.enable = false;
       copilot = {
         enable = false;
-        cmp.enable = true;
+        # cmp.enable = true;
       };
       codecompanion-nvim.enable = false;
-      avante-nvim.enable = true;
+      # avante-nvim.enable = true;
     };
 
     session = {
