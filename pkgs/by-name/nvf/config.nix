@@ -1,7 +1,4 @@
-
-{ pkgs, ... }:
-
-{
+{pkgs, ...}: {
   vim = {
     viAlias = true;
     vimAlias = true;
@@ -22,7 +19,7 @@
       style = "macchiato";
       transparent = false;
     };
-    
+
     options = {
       autoindent = false;
       shiftwidth = 0;
@@ -106,9 +103,9 @@
     };
 
     autopairs.nvim-autopairs.enable = true;
-    
+
     snippets.luasnip.enable = true;
-  
+
     filetree = {
       neo-tree = {
         enable = true;
@@ -140,7 +137,7 @@
       dashboard-nvim.enable = false;
       # alpha.enable = true;
     };
-    
+
     notify = {
       nvim-notify.enable = true;
     };
@@ -149,7 +146,7 @@
       # project-nvim.enable = true;
     };
 
-     utility = {
+    utility = {
       ccc.enable = false;
       vim-wakatime.enable = false;
       diffview-nvim.enable = true;
@@ -237,5 +234,9 @@
       neocord.enable = false;
     };
 
+    clipboard = {
+      enable = true;
+      registers = "unnamedplus";
+    };
   };
 }
