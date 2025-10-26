@@ -74,7 +74,7 @@
       go.enable = true;
       haskell.enable = true;
       html.enable = true;
-      julia.enable = true;
+      # julia.enable = true;
       lua.enable = true;
       markdown.enable = true;
       nix.enable = true;
